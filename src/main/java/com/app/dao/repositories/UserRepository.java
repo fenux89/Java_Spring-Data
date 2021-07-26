@@ -10,7 +10,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public interface UserRepository extends CrudRepository<User, String> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
     User findUserById(long id);
 

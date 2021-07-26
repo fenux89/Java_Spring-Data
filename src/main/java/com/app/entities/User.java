@@ -16,4 +16,20 @@ public class User {
     private String email;
     private String password;
     private String login;
+
+    public User() {
+    }
+
+    public User(String email, String password, String login) {
+        this.email = email;
+        this.password = password;
+        this.login = login;
+    }
+
+    public void testuser (){
+        long s=0;
+        for (int i = 0; i < 1000000; i++) {
+            s+=i*3+i;
+        }
+    }
 }
